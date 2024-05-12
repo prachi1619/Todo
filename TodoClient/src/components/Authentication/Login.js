@@ -28,15 +28,12 @@ export default function Login() {
         password: formData.password,
       };
       const response = await login(userData);
-      if (response.status === 200) {
+      console.log(response,'i am response')
+      if (response) {
         // Successful login
         toast.success(response.data.message);
         navigate("/todo");
-      } else {
-        // Error occurred during login
-        toast.error(response.data.message || "Login failed");
-        console.error("Login failed", response.data);
-      }
+      } 
     } catch (error) {
       // Network error or other unexpected error
       toast.error("Login failed");
