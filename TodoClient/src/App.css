@@ -1,0 +1,17 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    background: linear-gradient(90deg, #69c0eb, #63c0d7, #2e6588);
+    font-size: 1.1rem;
+    font-family: "Quicksand", sans-serif;
+    height: 100%;
+  }
+  
